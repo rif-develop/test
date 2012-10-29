@@ -1,0 +1,51 @@
+.image_list{
+   width : 90px;
+   height: 93px;
+   float: left;
+   margin : 0px;
+   padding: 0px;
+   background:gray;
+}
+.no_padding {
+    padding: 0px;
+}
+.no_margin {
+    margin: 0px;
+}
+
+.content_view {
+    background: black;
+    width : 360px;
+    height: 556px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* for horizon view
+    overflow-x: scroll;
+    overflow-y: hidden;
+     */
+
+}
+.horizon_view {
+    background: green;
+    margin: 0px;
+    padding: 0px;
+   /* for horizon view width 계산해서 변경해야 된다 */
+    width : 8000px;
+    height: 556px;
+
+}
+.vertical_view {
+    background: green;
+    margin: 0px;
+    padding: 0px;
+    width : 360px;
+    height: 100%;/*컨텐츠 길이 만큼 늘리고 처음 사진은 보여주고 빠른 스크롤일경우는 무시하고, index부터 stop 시점 부터 읽어오면될듯 */
+}
+.content_part_view {
+    background: blue;
+    /* for horizon view
+    float: left; horizon view로 변경 하려면 주석 푼다
+    */
+    width : 360px;
+    height: 556px;
+}
